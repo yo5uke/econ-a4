@@ -1,0 +1,70 @@
+---
+title: |
+  An Example of a Research Paper Using Econ A4 Typst Template
+author: 
+  - name: First Author
+    affiliation: University of Example
+    email: email@example.com
+  - name: Second Author
+    affiliation: Institute of Sample Studies
+    email: email@example.jp
+date: 2025-10-19
+date-format: long
+abstract: |
+  This is an example abstract for a research paper using the Econ A4 Typst template. It summarizes the main findings and contributions of the paper. The template is designed to meet the formatting requirements of economic journals and includes features such as section numbering and a table of contents. Researchers can easily customize the template to fit their specific needs while adhering to academic standards. Overall, this template aims to facilitate the writing process for economists and researchers in related fields.
+jel-codes: 
+  - C10
+  - C50
+keywords: 
+  - Econometrics
+  - Data Analysis
+  - Research Methodology
+format:
+  econ-a4-typst: 
+    number-sections: true
+    toc: true
+---
+
+## Introduction
+
+{{< lipsum 2p >}}
+
+## Background
+
+{{< lipsum 2p >}}
+
+## Identification Strategy
+
+Our identification strategy builds upon the framework established by prior research. We utilize a difference-in-differences approach to isolate the causal effect of our treatment variable on the outcome of interest. By comparing changes in outcomes over time between a treatment group and a control group, we aim to control for unobserved confounders that may bias our estimates.
+
+Let $Y_{it}$ denote the outcome variable for unit $i$ at time $t$, and let $D_{it}$ be a binary treatment indicator that equals 1 if unit $i$ is treated at time $t$ and 0 otherwise. We also include a vector of control variables $X_{it}$ to account for observable characteristics that may influence the outcome. The model can be specified as follows:
+
+$$
+Y_{it} = \alpha + \beta D_{it} + \gamma X_{it} + \delta_t + \mu_i + \epsilon_{it}
+$${#eq-diff-in-diff}
+
+where $\delta_t$ represents time fixed effects, $\mu_i$ captures unit fixed effects, and $\epsilon_{it}$ is the error term. The coefficient of interest, $\beta$, measures the average treatment effect on the treated (ATT).
+
+To ensure the validity of our identification strategy, we conduct several robustness checks. First, we test for parallel trends in the pre-treatment period to confirm that the treatment and control groups were on similar trajectories before the intervention. Second, we implement placebo tests by assigning fake treatment dates to verify that our results are not driven by random chance. Additionally, we explore alternative specifications of the model, including varying the set of control variables and using different functional forms.
+
+By employing this identification strategy, we aim to provide credible estimates of the causal impact of our treatment variable on the outcome of interest, contributing to the broader literature on this topic.
+
+## Data
+
+{{< lipsum 2p >}}
+
+## Bibliography
+
+@notsu_indirect_2025 
+
+{{< lipsum 1p >}}
+
+```{=typst}
+#bibliography("references.bib")
+```
+
+{{< pagebreak >}}
+
+## Appendix {.unnumbered}
+
+{{< lipsum 1p >}}
