@@ -96,7 +96,7 @@ format:
 ```` markdown
 ## References
 
-```{{=typst}}
+```{=typst}
 #bibliography("references.bib")
 ```
 ````
