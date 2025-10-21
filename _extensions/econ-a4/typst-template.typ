@@ -69,6 +69,7 @@
   }
 
   if authors != none {
+    v(2em)
     let count = authors.len()
     let ncols = calc.min(count, 3)
     grid(
