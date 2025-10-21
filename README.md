@@ -22,7 +22,7 @@ title: "タイトル"
 author: "著者名"
 date: "日付"
 format:
-  econ-a4: default
+  econ-a4-typst: default
 ---
 ```
 
